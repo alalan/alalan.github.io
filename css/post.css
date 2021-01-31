@@ -1,77 +1,56 @@
-body {
-    background-color: var(--white);
+#post {
+  line-height: 1.5;
 }
-
-.post {
-    margin: 128px 0;
+#post h1,
+#post .created-date {
+  text-align: center;
+  display: block;
+  font-weight: bold;
 }
-
-.meta .date {
-    color: var(--grey);
-    font-weight: 600;
+#post h2,
+#post h3,
+#post h4,
+#post h5,
+#post h6 {
+  line-height: 2;
+  margin-top: 10px;
 }
-
-.meta .title {
-    font-size: 48px;
-    margin-top: 16px;
+#post ol,
+#post ul,
+#post p,
+#post pre {
+  margin-top: 10px;
 }
-
-.content p, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .meta .date, .content figure, .divider, .container, hr, .meta .title, .content blockquote, .content table, .content video, .content ul, .content ol, .about {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 16px;
+#post ol,
+#post ul {
+  padding-left: 1rem;
 }
-
-.content .highlight {
-    overflow-x: auto;
-    overflow-y: hidden;
-    background-color: var(--body-bg);
-    border-radius: 4px;
-    max-width: calc(800px - 16px * 2);
+#post table {
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid #000;
 }
-
-@media screen and (max-width: 800px) {
-    .content .highlight {
-        border-radius: 0;
-    }
+#post table tbody tr:nth-child(odd) {
+  background: #d3d3d3;
 }
-
-.content .highlight .gutter {
-    padding-right: 16px;
+#post table tbody tr:nth-child(even) {
+  background: #fff;
 }
-
-.content table, .content video {
-    display: block;
+.sidebar-toc {
+  position: relative;
+  float: right;
 }
-
-.content video {
-    max-width: 100%;
-    padding: 0;
+code {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  background: #d3d3d3;
+  color: #1f2d3d;
 }
-
-.content ul, .content ol {
-    padding: 0 16px;
-    padding-left: 32px;
-    max-width: calc(800px - 16px * 2);
-}
-
-.content ul *, .content ol * {
-    padding: 0;
-}
-
-.content blockquote {
-    max-width: calc(800px - 16px * 2);
-    padding: 0 8px;
-}
-
-.about {
-    border-radius: 7px;
-    background-color: var(--body-bg);
-    padding: 16px;
-    margin: 64px auto;
-}
-
-.about h1 {
-    margin: 0;
+img {
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #eaeefb;
 }
